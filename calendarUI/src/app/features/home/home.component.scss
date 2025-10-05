@@ -16,6 +16,7 @@
 }
 
 .month {
+  margin: 4px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,7 +25,7 @@
   text-align: center;
   background-color: rgb(132, 164, 104);
   border: 1px solid #c5cec1;
-  border-radius: 4px;
+  border-radius: 8px;
   font-family: "Roboto", sans-serif;
   color: #dbe7dc;
 
@@ -33,6 +34,8 @@
     color: #ffffff;
     cursor: pointer;
   }
+
+
 }
 
 .year {
@@ -42,3 +45,10 @@
   font-family: "Roboto", sans-serif;
 
 }
+
+ .selected {
+    background-color: rgb(196, 198, 82);
+    border: 1px solid #323913;
+    color: #ffffff;
+  }
+

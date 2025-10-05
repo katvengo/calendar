@@ -2,7 +2,7 @@ import { format, startOfDay } from 'date-fns';
 const today = startOfDay(new Date);
 
 export const months = [
-  { id: 1, label: 'Jan'},
+  { id: 1, label: 'Jan' },
   { id: 2, label: 'Feb' },
   { id: 3, label: 'Mar' },
   { id: 4, label: 'Apr' },
