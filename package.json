@@ -16,5 +16,8 @@
     "url": "https://github.com/katvengo/calendar/issues"
   },
   "homepage": "https://github.com/katvengo/calendar#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "date-fns": "^4.1.0"
+  }
 }
