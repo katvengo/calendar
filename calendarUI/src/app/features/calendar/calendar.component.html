@@ -1,0 +1,58 @@
+<div class="calendar-wrapper">
+  <div class="calendar-year">
+    <div class="row">
+      <div (click)="selectPrevYear()"><img [src]="backwardIcon" class="img"></div>
+      <div class="year">{{currentYear()}}</div>
+      <div></div>
+    </div>
+    <div class="row">
+      <div class="month" [class.selected]="isSelected(this.months[0], currentYear())" (click)="selectMonth(this.months[0], currentYear())">{{this.months[0].label}}</div>
+      <div class="month" [class.selected]="isSelected(this.months[1], currentYear())" (click)="selectMonth(this.months[1], currentYear())">{{this.months[1].label}}</div>
+      <div class="month" [class.selected]="isSelected(this.months[2], currentYear())" (click)="selectMonth(this.months[2], currentYear())">{{this.months[2].label}}</div>
+    </div>
+    <div class="row">
+      <div class="month" [class.selected]="isSelected(this.months[3], currentYear())" (click)="selectMonth(this.months[3], currentYear())">{{this.months[3].label}}</div>
+      <div class="month" [class.selected]="isSelected(this.months[4], currentYear())" (click)="selectMonth(this.months[4], currentYear())">{{this.months[4].label}}</div>
+      <div class="month" [class.selected]="isSelected(this.months[5], currentYear())" (click)="selectMonth(this.months[5], currentYear())">{{this.months[5].label}}</div>
+    </div>
+    <div class="row">
+      <div class="month" [class.selected]="isSelected(this.months[6], currentYear())" (click)="selectMonth(this.months[6], currentYear())">{{this.months[6].label}}</div>
+      <div class="month" [class.selected]="isSelected(this.months[7], currentYear())" (click)="selectMonth(this.months[7], currentYear())">{{this.months[7].label}}</div>
+      <div class="month" [class.selected]="isSelected(this.months[8], currentYear())" (click)="selectMonth(this.months[8], currentYear())">{{this.months[8].label}}</div>
+    </div>
+    <div class="row">
+      <div class="month" [class.selected]="isSelected(this.months[9], currentYear())" (click)="selectMonth(this.months[9], currentYear())">{{this.months[9].label}}</div>
+      <div class="month" [class.selected]="isSelected(this.months[10], currentYear())" (click)="selectMonth(this.months[10], currentYear())">{{this.months[10].label}}</div>
+      <div class="month" [class.selected]="isSelected(this.months[11], currentYear())" (click)="selectMonth(this.months[11], currentYear())">{{this.months[11].label}}</div>
+    </div>
+  </div>
+  <div class="calendar-year">
+    <div class="row">
+      <div></div>
+      <div class="year">{{nextYear()}}</div>
+      <div (click)="selectNextYear()">
+        <img [src]="forwardIcon" class="img">
+      </div>
+    </div>
+    <div class="row">
+      <div class="month" [class.selected]="isSelected(this.months[0], nextYear())" (click)="selectMonth(this.months[0], nextYear())">{{this.months[0].label}}</div>
+      <div class="month" [class.selected]="isSelected(this.months[1], nextYear())" (click)="selectMonth(this.months[1], nextYear())">{{this.months[1].label}}</div>
+      <div class="month" [class.selected]="isSelected(this.months[2], nextYear())" (click)="selectMonth(this.months[2], nextYear())">{{this.months[2].label}}</div>
+    </div>
+    <div class="row">
+      <div class="month" [class.selected]="isSelected(this.months[3], nextYear())" (click)="selectMonth(this.months[3], nextYear())">{{this.months[3].label}}</div>
+      <div class="month" [class.selected]="isSelected(this.months[4], nextYear())" (click)="selectMonth(this.months[4], nextYear())">{{this.months[4].label}}</div>
+      <div class="month" [class.selected]="isSelected(this.months[5], nextYear())" (click)="selectMonth(this.months[5], nextYear())">{{this.months[5].label}}</div>
+    </div>
+    <div class="row">
+      <div class="month" [class.selected]="isSelected(this.months[6], nextYear())" (click)="selectMonth(this.months[6], nextYear())">{{this.months[6].label}}</div>
+      <div class="month" [class.selected]="isSelected(this.months[7], nextYear())" (click)="selectMonth(this.months[7], nextYear())">{{this.months[7].label}}</div>
+      <div class="month" [class.selected]="isSelected(this.months[8], nextYear())" (click)="selectMonth(this.months[8], nextYear())">{{this.months[8].label}}</div>
+    </div>
+    <div class="row">
+      <div class="month" [class.selected]="isSelected(this.months[9], nextYear())" (click)="selectMonth(this.months[9], nextYear())">{{this.months[9].label}}</div>
+      <div class="month" [class.selected]="isSelected(this.months[10], nextYear())" (click)="selectMonth(this.months[10], nextYear())">{{this.months[10].label}}</div>
+      <div class="month" [class.selected]="isSelected(this.months[11], nextYear())" (click)="selectMonth(this.months[11], nextYear())">{{this.months[11].label}}</div>
+    </div>
+  </div>
+</div>

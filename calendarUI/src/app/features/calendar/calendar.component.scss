@@ -1,0 +1,60 @@
+.calendar-wrapper {
+  width: 500px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.calendar-year {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.month {
+  margin: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  background-color: #00c9a7;
+  border: 1px solid #00c9a7;
+  border-radius: 8px;
+  font-family: "Roboto", sans-serif;
+  color: #dbe7dc;
+
+  &:hover {
+    background-color:#c4fcef;
+    color: #00c9a7;
+    border: 1px solid #c4fcef;
+    cursor: pointer;
+  }
+}
+
+.year {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 2px;
+  color: #4d8076;
+
+  padding-bottom: 25px;
+}
+
+.selected {
+  background-color: #0c4237;
+  border: 1px solid #0c4237;
+  color: #c4fcef;
+}
+
+.img {
+  width: 16px;
+  height: 16px;
+}

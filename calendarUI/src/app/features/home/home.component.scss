@@ -1,54 +1,35 @@
-.calendar-wrapper {
-  width: 500px;
-  display: flex;
-  justify-content: space-around;
-}
-
-.calendar-year {
+.main-wrapper {
   display: flex;
   flex-direction: column;
-}
-
-.row {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.month {
-  margin: 4px;
-  display: flex;
-  justify-content: center;
   align-items: center;
-  width: 45px;
-  height: 45px;
-  text-align: center;
-  background-color: rgb(132, 164, 104);
-  border: 1px solid #c5cec1;
-  border-radius: 8px;
-  font-family: "Roboto", sans-serif;
-  color: #dbe7dc;
-
-  &:hover {
-    background-color: rgb(42, 64, 24);
-    color: #ffffff;
-    cursor: pointer;
-  }
-
-
+  justify-content: center;
+  height: 100vh;
+  background-color: #f5f5f5;
 }
 
-.year {
+.attribute {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  color: gray
+}
+
+.selected {
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: bold;
   text-align: center;
-  font-family: "Roboto", sans-serif;
+  color: #0c4237;
 
+  padding: 25px;
+
+  span {
+    font-style: italic;
+  }
 }
 
- .selected {
-    background-color: rgb(196, 198, 82);
-    border: 1px solid #323913;
-    color: #ffffff;
-  }
-
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  color: #0c4237;
+}
